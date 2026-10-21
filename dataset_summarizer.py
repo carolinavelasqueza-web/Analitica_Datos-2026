@@ -40,4 +40,4 @@ class DatasetSummarizer:
         """Guarda el resumen en un archivo .txt y devuelve la ruta."""
         with open(path, "w", encoding="utf-8") as f:
             f.write(self.build_summary())
-        return path
+        return path 

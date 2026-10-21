@@ -1,5 +1,10 @@
 import pandas as pd
+import os
 from datasets import load_dataset, DatasetDict
+from dotenv import load_dotenv
+
+# Cargar variables del archivo .env al importar el módulo
+load_dotenv()
 
 
 class HFDatasetLoader:
@@ -11,8 +16,11 @@ class HFDatasetLoader:
 
     def load(self) -> pd.DataFrame:
         """Descarga el dataset desde Hugging Face y lo convierte a DataFrame."""
+        # Leer el token desde la variable de entorno (viene del .env)
+        token = os.environ.get("HF_TOKEN")
+
         try:
-            data = load_dataset(self.dataset_id, split=self.split)
+            data = load_dataset(self.dataset_id, split=self.split, token=token)
         except Exception as e:
             raise RuntimeError(f"No se pudo cargar '{self.dataset_id}': {e}") from e
 

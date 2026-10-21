@@ -1,0 +1,31 @@
+Resumen Dataset Iris - Transformado
+===================================
+Filas: 118
+Columnas: 4
+
+Columnas y tipos de datos:
+  - longitud_sepalo: float64
+  - ancho_sepalo: float64
+  - ratio_sepalo: float64
+  - especie: str
+
+Valores nulos por columna:
+  - longitud_sepalo: 0
+  - ancho_sepalo: 0
+  - ratio_sepalo: 0
+  - especie: 0
+Total de nulos: 0
+
+Estadísticas descriptivas:
+        longitud_sepalo  ancho_sepalo  ratio_sepalo          especie
+count        118.000000    118.000000    118.000000              118
+unique              NaN           NaN           NaN                3
+top                 NaN           NaN           NaN  Iris-versicolor
+freq                NaN           NaN           NaN               50
+mean           6.071186      2.916102      2.103451              NaN
+std            0.769293      0.344671      0.312004              NaN
+min            4.400000      2.000000      1.500000              NaN
+25%            5.600000      2.700000      1.957391              NaN
+50%            6.100000      3.000000      2.148148              NaN
+75%            6.575000      3.100000      2.250000              NaN
+max            7.900000      3.800000      2.961538              NaN
