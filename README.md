@@ -1,4 +1,3 @@
-cat > README.md << 'EOF'
 # Analítica de Datos 2026 - Evidencia de Aprendizaje 1
 
 ## Descripción
