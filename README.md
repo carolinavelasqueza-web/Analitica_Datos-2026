@@ -1,8 +1,18 @@
-# Analitica_Datos-2026
+cat > README.md << 'EOF'
+# Analítica de Datos 2026 - Evidencia de Aprendizaje 1
 
-paso 1 #
-comando python -m venv .venv
+## Descripción
+Proyecto que carga un dataset desde Hugging Face, aplica transformaciones y genera un resumen en archivo .txt.
 
-paso 2 # 
-activar el entorno
+## Estructura del proyecto
+- `hf_dataset_loader.py` → Clase para cargar datasets de Hugging Face
+- `dataset_summarizer.py` → Clase para generar resúmenes de DataFrames
+- `flujo_completo1.ipynb` → Notebook que coordina el flujo completo
+- `resumen_dataset.txt` → Resumen generado del dataset transformado
+- `requirements.txt` → Dependencias del proyecto
 
+## Instalación
+```bash
+python -m venv .venv
+source .venv/bin/activate  # Linux/Mac
+pip install -r requirements.txt
